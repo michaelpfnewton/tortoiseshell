@@ -1,0 +1,180 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+.banner {
+  /* link to extenal URL */
+
+  background: url("/Users/michaelnewton/Documents/Projects/tortoiseshell/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%
+}
+
+.container {
+  margin: 0 auto;
+  border: solid;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+  height: 3rem;
+  width: 100%
+}
+
+.header img {
+  position: relative;
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.header li {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.title {
+  background-color: white;
+  color: black;
+  position: relative;
+}
+
+h1 {
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.icon {
+  display: block;
+  height: 8rem;
+  width: 5rem;
+  text-align: center;
+  margin: 0px;
+  border: solid;
+}
+
+.icon img {
+  max-width: 5rem;
+}
+
+.icon span {
+  align-items: baseline;
+  font-size: 0.77rem;
+  text-align: center;
+}
+
+.middle-section {
+  position: relative;
+  display: flex;
+  border: solid;
+  justify-content: center;
+}
+
+.information {
+  position: relative;
+}
+
+footer {
+
+  width: 100%;
+  background-color: azure;
+  height: 9.5rem;
+}
+
+/* Desktop site */
+
+@media only screen and (min-width: 960px)  {
+  .banner {
+    height: 30rem;
+
+  }
+  .header {
+    margin-top: 1rem;
+  }
+  .container {
+    width: 960px;
+  }
+  .title {
+    width: 25rem;
+    padding: 1.5rem 5rem;
+    top: 10rem;
+    float: right;
+    margin-right: -2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .icon {
+    margin: 3rem;
+  }
+  .middle-section {
+    top: 31rem;
+  }
+  .information {
+    top: 45rem;
+  }
+}
+
+/* Tablet site */
+
+@media only screen and (max-width: 960px)  {
+  .banner {
+    height: 22rem;
+  }
+  .title {
+    padding: 0.5rem 4rem;
+    top: 5rem;
+    float: right;
+    margin-right: 2rem;
+  }
+  .container {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
+  .icon {
+    margin: 3rem;
+  }
+  .information {
+    top: 36rem;
+  }
+}
+
+/* Mobile site */
+
+@media only screen and (max-width: 470px)  {
+  .banner {
+    height: 17rem;
+  }
+  .title {
+    width: 100%
+    padding: 1.5rem 0rem;
+    top: 9rem;
+  }
+  .container {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .icon {
+    margin: 1.54rem;
+  }
+  .middle-section {
+    padding: 2.23rem;
+  }
+  .information {
+    top: 51.62;
+  }
+}
