@@ -11,14 +11,11 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: absolute;
-  top: 0px;
   width: 100%
 }
 
 .container {
   margin: 0 auto;
-  border: solid;
 }
 
 .header {
@@ -54,40 +51,52 @@ h1 {
 }
 
 .icon {
-  display: block;
+  position: relative;
   height: 8rem;
   width: 5rem;
   text-align: center;
   margin: 0px;
-  border: solid;
 }
 
 .icon img {
   max-width: 5rem;
+  max-height: 5rem;
 }
 
 .icon span {
-  align-items: baseline;
   font-size: 0.77rem;
-  text-align: center;
 }
 
 .middle-section {
-  position: relative;
   display: flex;
-  border: solid;
   justify-content: center;
 }
 
 .information {
-  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.phil-app h2 {
+  background-color: cadetblue;
+  font-size: 1rem;
+  color: white;
+  height: 2rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
 }
 
 footer {
-
   width: 100%;
   background-color: azure;
   height: 9.5rem;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 0rem 4rem 4rem;
 }
 
 /* Desktop site */
@@ -117,10 +126,20 @@ footer {
     margin: 3rem;
   }
   .middle-section {
-    top: 31rem;
+
   }
   .information {
-    top: 45rem;
+    margin-bottom: 5rem;
+  }
+  .phil-app {
+    width: 35%;
+    margin: 0 2.5%;
+  }
+  .phil-app h2 {
+    max-width: 10rem;
+  }
+  footer span {
+    margin-left: 1rem;
   }
 }
 
@@ -146,9 +165,18 @@ footer {
     margin: 3rem;
   }
   .information {
-    top: 36rem;
+    margin-bottom: 5rem;
   }
+  .phil-app {
+    width: 35%;
+    margin: 0 2.5%;
 }
+  .phil-app h2 {
+    max-width: 10rem;
+}
+footer span {
+    margin-left: 1rem;
+  }
 
 /* Mobile site */
 
@@ -173,8 +201,25 @@ footer {
   }
   .middle-section {
     padding: 2.23rem;
+    display: block;
   }
   .information {
-    top: 51.62;
+    display: block;
+  }
+  .phil-app {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .phil-app h2 {
+    width: 100%;
+  }
+  .phil-app p {
+    font-size: 0.77rem;
+  }
+  footer {
+    justify-content: center;
+  }
+  footer span {
+    display: none;
   }
 }
